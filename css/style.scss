@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: 'Gideon Roman', cursive;
+  font-size: 18px;
+}
+.blur {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+.blur__background {
+  height: 100%;
+  width: 100%;
+  background: url(../img/back.jpg) no-repeat center/cover;
+  filter: blur(50px);
+}
+.blur__percentage {
+  font-size: 50px;
+  color: aliceblue;
+  position: absolute;
+  z-index: 1000;
+}

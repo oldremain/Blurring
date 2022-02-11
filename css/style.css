@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Gideon Roman", cursive;
+  font-size: 18px;
+}
+
+.blur {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.blur__background {
+  height: 100%;
+  width: 100%;
+  background: url(../img/back.jpg) no-repeat center/cover;
+  -webkit-filter: blur(50px);
+          filter: blur(50px);
+}
+
+.blur__percentage {
+  font-size: 50px;
+  color: aliceblue;
+  position: absolute;
+  z-index: 1000;
+}
