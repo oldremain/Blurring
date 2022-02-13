@@ -42,4 +42,6 @@ body {
   color: aliceblue;
   position: absolute;
   z-index: 1000;
+  -webkit-filter: opacity(1);
+          filter: opacity(1);
 }

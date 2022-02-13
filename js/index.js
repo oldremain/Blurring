@@ -10,6 +10,7 @@ function blurring(root) {
     }
     percentProgress  += 1;
     $percent.textContent = `${percentProgress } %`;
+    $percent.style.filter = `opacity(${1 - (percentProgress / 100)})`
     $bg.style.filter = `blur(${50 - (percentProgress / 2)}px)`;
   }, 50);
 }
